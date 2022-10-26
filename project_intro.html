@@ -56,16 +56,55 @@
 
 						<h3> User Story</h3>
 						<ol>
-							<li><p>As an urban planner, I want to have a 3D view of the city, 
+							<li>
+								<p>As an <em><b>urban planner</b></em>, I want to have a 3D view of the city, 
 								including features like roads, parks, buildings, etc. So I can make better decisions on city planning. 
 								After uploading the Lidar point cloud, a 3D rendering will be generated in the user interface. 
 								It supports basic functionalities like click and drag, zoom in and zoom out, 
-								so I can use it to show my design idea. </p></li>
-							<li><p>As an architect, I want to access various kinds of information when I crop a certain area of land. 
+								so I can use it to show my design idea. </p>
+								<p>If the point cloud data that I have are already classified, each class will be colored differently. 
+									My main focus is to tell:
+								</p>
+								<ul>
+									<li>How much of the area is occupied by man-made structure/development (e.g. buildings, roads, bridge)</li>
+									<li>Where are all the vegetation features located (e.g. grass, shrubs, trees)</li>
+									<li>A clear display of the road systems</li>
+									<li>A clear display of the powerline infrastructure (e.g. power tower, distribution line). 
+										This is an important factor to consider when I make urban development plan
+									</li>
+								</ul>
+								<p>If my point cloud data is unclassified, I want to be able to process my data and assign the 
+									following classification code to each point
+								</p>
+								<ul>
+									<li>0 Never Classified</li>
+									<li>1 Unassigned</li>
+									<li>2 Ground</li>
+									<li>3 Low Vegetation</li>
+									<li>4 Medium Vegetation</li>
+									<li>5 High Vegetation</li>
+									<li>6 Building</li>
+									<li>7 Noise</li>
+									<li>8 Model Key/Reserved</li>
+									<li>9 Water</li>
+									<li>10 Rail</li>
+									<li>11 Road Surface</li>
+									<li>12 Overlap/Reserved</li>
+									<li>13 Wire - Guard</li>
+									<li>14 Wire - Conductor</li>
+									<li>15 Transmission Tower</li>
+									<li>16 Wire - Connector</li>
+									<li>17 Bridge Deck</li>
+									<li>18 High Noise</li>
+								</ul>
+							</li>
+
+							<li><p>As an <em><b>architect</b></em>, I want to access various kinds of information when I crop a certain area of land. 
 								The information includes building coverage ratio, residential density, and afforested area. 
 								With the help of terrestrial equipment, I can also have a view of infrastructure and population,  
 								so that I can make a more elaborate analysis on site research and present more convincing data for my project.</p></li>
-							<li><p>As a civil engineer, I want regional distribution and topographic maps to help me with road planning. 
+							
+								<li><p>As a <em><b>civil engineer</b></em>, I want regional distribution and topographic maps to help me with road planning. 
 								In the map, I need the distribution of existing buildings and roads. 
 								Also, the areas of farmlands, rivers and forests are also important. 
 								Besides these, I need the map of topography including altitude information to help me design.</p></li>
@@ -84,11 +123,11 @@
 							<dd><br></dd>
 
 							<dt>Week 3: 10/16 - 10/22</dt>
-							<dd>Perform semantic segmentation of Lidar las file. </dd>
+							<dd>LAS file process; front end features</dd>
 							<dd><br></dd>
 
 							<dt>Week 4: 10/23 - 10/29</dt>
-							<dd>Perform semantic segmentation of Lidar las file. Use an open-source ML library to increase the accuracy of our segmentation. </dd>
+							<dd>LAS file process. (including classification); front end features</dd>
 							<dd><br></dd>
 
 							<dt>Week 5: 10/30 - 11/05</dt>
@@ -96,19 +135,20 @@
 							<dd><br></dd>
 
 							<dt>Week 6: 11/06 - 11/12</dt>
-							<dd>Build front end applications to visualize the point cloud. (Cesium JS)</dd>
+							<dd>Build the minimum viable product: a website that supports file uploading and 3D visualization; Testing
+							</dd>
 							<dd><br></dd>
 
 							<dt>Week 7: 11/13 - 11/19</dt>
-							<dd>Build front end applications to visualize the point cloud. </dd>
+							<dd>Build the minimum viable product: a website that supports file uploading and 3D visualization; Testing</dd>
 							<dd><br></dd>
 
 							<dt>Week 8: 11/20 - 11/26</dt>
-							<dd>Check accuracy of our visualization</dd>
+							<dd>Make improvement based on stakeholders’ feedback; Testing</dd>
 							<dd><br></dd>
 
 							<dt>Week 9: 11/27 - 12/03</dt>
-							<dd>Test our API using another Lidar point cloud data. </dd>
+							<dd>Testing</dd>
 							<dd><br></dd>
 
 							<dt>Week 10: 12/04 - 12/10</dt>
