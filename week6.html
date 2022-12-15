@@ -2,13 +2,12 @@
 
 <html>
 	<head>
-		<title>About Us</title>
+		<title>Week 6 Update</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="author" content="Peinan Wang">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
 	</head>
 	<body class="is-preload">
 
@@ -32,9 +31,9 @@
 				<!-- Nav -->
 				<nav id="nav">
 					<ul class="links">
-						<li><a href="index.html">Projects Updates</a></li>
+						<li class="active"><a href="index.html">Project Updates</a></li>
 						
-						<li class="active"><a href="index.html">About Us</a></li>
+						<li><a href="about_us.html">About Us</a></li>
 						
 					</ul>
 					<ul class="icons">
@@ -48,27 +47,39 @@
 					<!-- Post -->
 					<section class="post">
 					    <header class="major">
-							<h2>About Our Team<br /></h2>
-							<p>MSCS Students at Northeastern University</p>
+							<h2>Project Update - Week 6<br /></h2>
+							<p>Sprint 5</p>
 						</header>
 
-						<p>We are a group of students of the Foundations of Software Engineering course (CS 5500) at Northeastern 
-							University. We have diverse undergraduate backgrounds and we are now pursuing our Master of Science in 
-							Computer Science degree at Northestern University's Vancouver campus. 
-						</p>
-						
-						<h3>Yuhao Hua</h3>
-						<ul>
-							<li>Works on backend development and unit testing</li>
-						</ul>
-						<h3>Peinan Wang</h3>
-						<ul>
-							<li>Works on backend development and point cloud data visualization</li>
-						</ul>
-						<h3>Luocheng Zhu</h3>
-						<ul>
-							<li>Works on frontend development</li>
-						</ul>
+						<p>This page summarizes the group activities and project progress in Week 6 (Novemver 6 - November 12)</p>
+
+						<h3>Sprint 5 Tasks</h3>
+	
+						<dl>
+							<dt>Yuhao Hua</dt>
+							<dd>Troubleshoot problems with Open3D module and its dependencies</dd>
+							<dd>Troubleshoot issues with Open3D on apple sillicon</dd>
+							<dd><br></dd>
+                            
+							<dt>Peinan Wang</dt>
+							<dd>Fixed web-visualizer issue in Sprint 4 (Using python subprocess call to execute the visualization scripts</dd>
+							<dd>Implement functions on point cloud data analysis</dd>
+							<dd><br></dd>
+
+							<dt>Luocheng Zhu</dt>
+							<dd>Deploy the basic website on Heroku</dd>
+							<dd>Implement a progress bar for file uploading</dd>
+							<dd>Link other pages to index.html</dd>
+						</dl>
+
+						<h3>Progress</h3>
+						<p>Now we have finished our minimal viable product.</p>
+						<img src="images/week6/updated_webpage.png" alt="updated_webpage" width="90%">
+						<p>We deployed our website on Heroku but the deployed version only has basic file upload functionality</p>
+						<p>We were not able to push the entire project to Heroku. We later tried to build a Dockerfile and deploy the 
+							website through Docker. It failed again due to the dependencies issue with Open3d. 1) Open3d library require 
+							additional system dependencies which require building from source. 2) It is hard to perform headless rendering. 
+						<p></p><br>
 
 					</section>
 

@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>About Us</title>
+		<title>Week 5 Update</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="author" content="Peinan Wang">
@@ -32,9 +32,9 @@
 				<!-- Nav -->
 				<nav id="nav">
 					<ul class="links">
-						<li><a href="index.html">Projects Updates</a></li>
+						<li class="active"><a href="index.html">Project Updates</a></li>
 						
-						<li class="active"><a href="index.html">About Us</a></li>
+						<li><a href="about_us.html">About Us</a></li>
 						
 					</ul>
 					<ul class="icons">
@@ -48,27 +48,43 @@
 					<!-- Post -->
 					<section class="post">
 					    <header class="major">
-							<h2>About Our Team<br /></h2>
-							<p>MSCS Students at Northeastern University</p>
+							<h2>Project Update - Week 5<br /></h2>
+							<p>Sprint 4</p>
 						</header>
 
-						<p>We are a group of students of the Foundations of Software Engineering course (CS 5500) at Northeastern 
-							University. We have diverse undergraduate backgrounds and we are now pursuing our Master of Science in 
-							Computer Science degree at Northestern University's Vancouver campus. 
+						<p>This page summarizes the group activities and project progress in Week 5 (October 30 - November 5)</p>
+
+						<h3>Sprint 4 Tasks</h3>
+	
+						<dl>
+							<dt>Yuhao Hua</dt>
+							<dd>Learn Python Flask framework</dd>
+							<dd>Modify file upload part in html document</dd>
+							<dd>Troubleshoot problems that Open3D doesn’t work on Macbook with apple silicon. </dd>
+							<dd><br></dd>
+                            
+							<dt>Peinan Wang</dt>
+							<dd>Update the code for data processing and visualization, so we can connect to Open3d’s 
+								WebRTC server and see the rendering in browser at localhost port 8888</dd>
+							<dd><br></dd>
+
+							<dt>Luocheng Zhu</dt>
+							<dd>Insert a 3D object into the website </dd>
+							<dd>Start working on login function </dd>
+							<dd>Use Font Awesome CDN and add fancy font styles </dd>
+						</dl>
+
+						<h3>Progress</h3>
+						<p>We are able to show the open3d window in browser. It works when we are running our visualization script 
+							directly in the terminal.
 						</p>
-						
-						<h3>Yuhao Hua</h3>
-						<ul>
-							<li>Works on backend development and unit testing</li>
-						</ul>
-						<h3>Peinan Wang</h3>
-						<ul>
-							<li>Works on backend development and point cloud data visualization</li>
-						</ul>
-						<h3>Luocheng Zhu</h3>
-						<ul>
-							<li>Works on frontend development</li>
-						</ul>
+						<img src="images/week5/web_visualizer_working.png" alt="web_visualizer_working" width="90%">
+						<p>But when we run our web application and trigger the visualization function through a button click, the window is 
+							not showing properly. It is just a grey box, which means no Open3d Geometry object has been added to the window.
+						</p>
+						<img src="images/week5/web_visualizer_issue2.png" alt="web_visualizer_not_working" width="90%">
+						<img src="images/week5/web_visualizer_issue1.png" alt="terminal_screenshot" width="90%">
+						<p></p><br>
 
 					</section>
 
