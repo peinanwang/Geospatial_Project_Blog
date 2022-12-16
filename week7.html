@@ -63,8 +63,7 @@
 							<dd><br></dd>
                             
 							<dt>Peinan Wang</dt>
-							<dd>Visualize point cloud in Open3D by applying different colors to different classification</dd>
-							<dd>Learn point cloud classification</dd>
+							<dd>Refactor visualization functions and update backend features</dd>
 							<dd><br></dd>
 
 							<dt>Luocheng Zhu</dt>
@@ -72,6 +71,40 @@
 							<dd>Re-organize folders</dd>
 							<dd><br></dd>
 						</dl>
+
+						<h3>Progress</h3>
+						<p>Now we have finished our minimal viable product, in which all three buttons (i.e., 
+							"Submit", "Visualize", "Stop Visualization") are implemnted and functioning as expected.
+						</p>
+						<p>Expected User Experience and Workflow<br>
+							1)  Select file (restricted on file type)<br>
+							
+							2)  Click the "Submit" button to submit file<br>
+							
+							3)  Once a file is submitted successfully, some message will be displayed; point cloud data information 
+							will be displayed in the table. Step 4) - 7) will be disabled until the file is uploaded and saved successfully.<br>
+							
+							4)  Click the "Visualize" button to start the visualization process. (The visualization script is running on the backend. 
+							A progress bar will be added to track the process). Step 5) will be disabled until the visualization is ready. <br>
+							
+							5)  Click the "To see the rendering" link to see the visualization rendering. 
+							Users will be directed to localhost:8888 to see the open3d webrtc window. <br>
+							
+							6)  Click the "Stop Current Visualization" button to terminate the running visualization scripts. <br>
+						</p>
+						<p>Step 4) - 6) will be a "loop". We can click the "Visualize" button ONLY when there is NO visualization script running. <br>
+						</p>
+
+						<img src="images/week7/ux.jpg" alt="new_ux" width="70%">
+
+						<h3>Deployment Issues</h3>
+						<p>We deployed our website on Heroku but the deployed version only has basic file upload functionality. We were not able to push the entire project to Heroku. We later tried to build a Dockerfile and deploy the 
+							website through Docker. It failed again due to the dependencies issue with Open3d. 
+							<br>
+							<br>1)  Open3d library require 
+							additional system dependencies which require building from source. 
+							<br>2)  It is hard to perform headless rendering. 
+						<p></p><br>
 
 					</section>
 
